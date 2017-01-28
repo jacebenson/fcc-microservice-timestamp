@@ -22,7 +22,7 @@
      *         "naturalLanguageDate": "Mon Jan 01 2029"
      *      }
      */
-    
+
     /**
      * @api {get} api/
      * @apiName Insert URL
@@ -49,7 +49,7 @@
 function getTime(input, response) {
     try {
         console.log('input: ' + input);
-
+        var returnObj = {};
         if (input.length > 0) {
             if (isNaN(input)) {//not a number
                 var d = new Date(decodeURIComponent(input));
