@@ -5,9 +5,8 @@
      * @apiGroup GetTime
      * 
      * @apiExample {curl} Example usage:
-     * 
-     * curl http://timestamp-svc.herokuapp.com/January 1, 2029
-     * curl http://timestamp-svc.herokuapp.com/2222
+     * curl http://timestamp-svc.herokuapp.com/api/January 1, 2029
+     * curl http://timestamp-svc.herokuapp.com/api/1861920000000
 
      * @apiParam {String} input
      *      
@@ -30,9 +29,8 @@
      * @apiGroup Get
      * 
      * @apiExample {curl} Example usage:
-
-     * curl http://timestamp-svc.herokuapp.com/
-
+     * curl http://timestamp-svc.herokuapp.com/api/
+     * 
      * @apiParam {String} input
      *      
      * @apiSuccess {Object} timeObj information
