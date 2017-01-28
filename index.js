@@ -1,27 +1,14 @@
-var http = require('http');
-const PORT = process.env.PORT;
-function handleRequest(request, response) {
-  var returnObj = {
-    unixTimeStamp: null,
-    naturalLanguageDate: null
-  };
-  var input = request.url.toString().split('/')[1];
-    if (input.length > 0) {
-    if (isNaN(input)) {//not a number
-      var d = new Date(decodeURIComponent(input));
-      returnObj.unixTimeStamp = d.valueOf();
-      returnObj.naturalLanguageDate = d.toDateString();
-    } else {
-      var d = new Date(parseInt(input, 10));
-      returnObj.unixTimeStamp = d.valueOf();
-      returnObj.naturalLanguageDate = d.toDateString();
-    }
-  }
-  response.setHeader('Content-Type', 'application/json');
-  response.end(JSON.stringify(returnObj, '', '    '));
-}
+'use strict';
+var port = process.env.PORT || 5000;
+var express = require('express');        // call express
+var app = express();                 // define our app using express
+var bodyParser = require('body-parser');
+var api = require('./app/routes/api.js');
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
+app.use('/', express.static('./public'));
+api(app);
 
-var server = http.createServer(handleRequest);
-server.listen(PORT, function () {
-  //console.log("Server listening on: http://localhost:%s", PORT);
+app.listen(port, function () {
+    console.log('Node.js listening on port ' + port);
 });
