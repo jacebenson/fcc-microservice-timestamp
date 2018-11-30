@@ -9,7 +9,7 @@
     "examples": [
       {
         "title": "Example usage:",
-        "content": "curl http://timestamp-svc.herokuapp.com/api/",
+        "content": "curl https://ms-time.glitch.me/api/",
         "type": "curl"
       }
     ],
@@ -73,7 +73,7 @@
     "examples": [
       {
         "title": "Example usage:",
-        "content": "curl http://timestamp-svc.herokuapp.com/api/January 1, 2029\ncurl http://timestamp-svc.herokuapp.com/api/1861920000000",
+        "content": "curl https://ms-time.glitch.me/api/timestamp/January 1, 2029\ncurl https://ms-time.glitch.me/api/timestamp/1861920000000",
         "type": "curl"
       }
     ],

@@ -1,25 +1,26 @@
 {
-  "name": "timestamp-api",
-  "version": "1.0.0",
-  "description": "An API to return Unix Time and Natural Language Time",
-  "engines": {
-    "node": "5.9.1"
-  },
-  "main": "index.js",
-  "scripts": {
-    "start": "node ./index.js"
-  },
-  "dependencies": {
-    "express": "4.14.0",
-    "body-parser": "1.16.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://gitlab.com/jacebenson/fcc-microservice-timestamp"
-  },
-  "keywords": [
-    "node",
-    "heroku"
-  ],
-  "license": "MIT"
+	"name": "fcc-api-projects-boilerplate",
+	"version": "0.0.1",
+	"description": "An FCC Backend Challenge",
+	"main": "server.js",
+	"scripts": {
+		"start": "node index.js"
+	},
+	"dependencies": {
+		"express": "^4.12.4",
+		"cors": "^2.8.0",
+		"body-parser": "1.16.0",
+		"apidoc": "0.17.6"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://gitlab.com/jacebenson/fcc-microservice-timestamp.git"
+	},
+	"keywords": [
+		"node",
+		"hyperdev",
+		"express",
+		"freecodecamp"
+	],
+	"license": "MIT"
 }

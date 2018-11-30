@@ -5,8 +5,8 @@
      * @apiGroup GetTime
      * 
      * @apiExample {curl} Example usage:
-     * curl http://timestamp-svc.herokuapp.com/api/January 1, 2029
-     * curl http://timestamp-svc.herokuapp.com/api/1861920000000
+     * curl https://ms-time.glitch.me/api/timestamp/January 1, 2029
+     * curl https://ms-time.glitch.me/api/timestamp/1861920000000
 
      * @apiParam {String} input
      *      
@@ -29,7 +29,7 @@
      * @apiGroup Get
      * 
      * @apiExample {curl} Example usage:
-     * curl http://timestamp-svc.herokuapp.com/api/
+     * curl https://ms-time.glitch.me/api/
      * 
      * @apiParam {String} input
      *      
@@ -68,7 +68,7 @@ function getTime(input, response) {
 }
 module.exports = function (app) {
 
-    app.route('/api/:num')
+    app.route('/api/timestamp/:num')
         .get(function (req, res) {
             
             res.setHeader('Content-Type', 'application/json');
