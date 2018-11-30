@@ -1,14 +1,14 @@
 define({
-  "name": "timestamp-api",
-  "version": "1.0.0",
-  "description": "An API to return Unix Time and Natural Language Time",
+  "name": "fcc-api-projects-boilerplate",
+  "version": "0.0.1",
+  "description": "An FCC Backend Challenge",
   "sampleUrl": false,
   "defaultVersion": "0.0.0",
   "apidoc": "0.3.0",
   "generator": {
     "name": "apidoc",
-    "time": "2017-01-28T17:36:13.385Z",
+    "time": "2018-11-30T07:12:18.218Z",
     "url": "http://apidocjs.com",
-    "version": "0.17.4"
+    "version": "0.17.6"
   }
 });
